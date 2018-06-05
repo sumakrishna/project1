@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+</head>
+<body>
+  
+      
+<div class="row" style="padding: 10px;">
+<% for(var i=0;i<result.length;i++){ %>
+  <div class="col-sm-12">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <% if(result[i].bool) { %>
+       <p><b><%= result[i].name %></b> with <%= result[i].regdno %> outing permission is <b>granted</b></p>  
+       <% } else { %>
+       
+          <p><b><%= result[i].name %></b> with <%= result[i].regdno %> outing permission is <b>rejected</b></p>  
+      <% } %>
+  
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+</body>
+</html>
